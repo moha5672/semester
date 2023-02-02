@@ -1,0 +1,55 @@
+/* Nulstilling af margin og padding på alle elementer, samt ændring af box model på alle elementer */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Normalisering af font og linjehøjde på dokumentets tekster, samt nedtoning af tekstfarven */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #2d2d2d;
+}
+
+/* Normalisering af billeder */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.produkter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.Tilbud-text {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-size: small;
+}
+.Tilbud-text span {
+  text-decoration-line: line-through;
+}
+.Tilbud-text p:last-child {
+  background-color: yellow;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text > :last-child {
+  margin-top: auto;
+}
+
+.udsolgt img {
+  opacity: 0.5;
+}
+.produkt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
