@@ -48,8 +48,18 @@ img {
 .udsolgt img {
   opacity: 0.5;
 }
+.udsolgt::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: red;
+}
 .produkt {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+.produkt::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: red;
 }
