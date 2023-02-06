@@ -17,21 +17,27 @@
     </header>
     <main>
       <h1>Produkter</h1>
-      <div class="produkter">
-        <div class="Normal">
+
+      <template id="smallProductTemplate">
+        <article class="smallProduct">
           <img
             src=" https://kea-alt-del.dk/t7/images/webp/1000/1533.webp "
-            alt="bold"
+            alt=""
           />
-          <div class="text">
-            <h3>Puma T-shirt</h3>
 
-            <p>Tshirts | PUMA</p>
-            <p>DKK 1899</p>
-            <a href="produkt.html"> Læs mere</a>
+          <h3>Puma T-shirt</h3>
+
+          <p class="type">Tshirts</p>
+          <p class="pris">DKK 1899</p>
+          <div class="discounted">
+            <p class="ny">ny pris</p>
+            <p>den procentvise ændring</p>
           </div>
-        </div>
-        <div class="Tilbud">
+          <a href="produkt.html"> Læs mere</a>
+        </article>
+      </template>
+      <!--
+        <div class="produkt Tilbud">
           <img
             src=" https://kea-alt-del.dk/t7/images/webp/1000/1533.webp "
             alt="bold"
@@ -48,7 +54,7 @@
             <a href="produkt.html"> Læs mere</a>
           </div>
         </div>
-        <div class="udsolgt">
+        <div class="produkt udsolgt">
           <img
             src=" https://kea-alt-del.dk/t7/images/webp/1000/1533.webp "
             alt="bold"
@@ -59,7 +65,7 @@
           <p>DKK 1899</p>
           <a href="produkt.html"> Læs mere</a>
         </div>
-        <div class="udsolgt">
+        <div class="produkt Tilbud udsolgt">
           <img
             src=" https://kea-alt-del.dk/t7/images/webp/1000/1533.webp "
             alt="bold"
@@ -76,8 +82,8 @@
             <a href="produkt.html"> Læs mere</a>
           </div>
         </div>
-      </div>
+        -->
     </main>
-    <script src="java.script.js"></script>
+    <script src="produktlist.js"></script>
   </body>
 </html>
